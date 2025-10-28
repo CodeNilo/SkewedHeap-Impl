@@ -25,3 +25,16 @@ Nodo* atenderIncidente(Nodo* root) {
 
     return merge(hijoIzquierdo, hijoDerecho);
 }
+
+void verMasUrgente(Nodo* root) {
+    if (root == nullptr) {
+        cout << "\n>> No hay incidentes pendientes" << endl;
+        return;
+    }
+
+    Incidente masUrgente = root->dato;
+
+    cout << "\n---Incidente mas urgente sin atender ---" << endl;
+    masUrgente.mostrarInfo(); 
+    cout << "------------------------------------------------" << endl;
+}
