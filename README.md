@@ -1,6 +1,6 @@
 # Implementación de Skewed Heap
 
-Implementación de la estructura de datos Skewed Heap (Montículo Sesgado) con gestión de elementos mediante cola de prioridad (min-heap).
+Implementación de la estructura de datos Skewed Heap con gestión de elementos mediante cola de prioridad (min-heap).
 
 ## Compilación y Ejecución
 ```bash
@@ -28,14 +28,6 @@ El programa ofrece un menú interactivo para gestionar 3 zonas (A, B, C) de Skew
 **Simulacion**: Funciones para simular y visualizar fusión de zonas
 
 **Menu**: Interfaz de usuario para interactuar con las zonas
-
-## Diferencias con Leftist Heap
-El Skewed Heap es una versión **más simple** del Leftist Heap:
-
-- ❌ **NO mantiene NPL** (Null Path Length)
-- ✅ **SIEMPRE hace swap** de hijos izquierdo y derecho después del merge (incondicional)
-- ✅ **Self-adjusting**: No requiere invariantes explícitos
-- ✅ Igual de eficiente en promedio que Leftist Heap
 
 El Skewed Heap mantiene la propiedad de min-heap. Todas las operaciones se basan en la función merge con swap incondicional.
 
